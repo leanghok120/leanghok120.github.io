@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.142.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>lean&#39;s blog!!</title>
+    <link rel="canonical" href="http://localhost:1313/">
+    
+    
+    <link rel="icon" href="/favicon.ico">
+    
+    
+    <meta name="description" content="">
+    
+    
+    
+    <style>
+
+
+
+
+    
+        
+    
+
+
+:root {
+    --site-bg: url("/flowertile.png");
+    --accent-color: #f55cc0;
+    --select-color: #ffc1e9;
+    --link-color: #5083C1;
+    --bg-color: #CEEAFF;
+    --text-color: #191919;
+    --bg-color2: white;
+    --border-color: #215697;
+    --special-text-color: #215697;
+    --post-header-color: white;
+    --post-shadow-color: #21569760;
+    --outline-color: #6EAAD6;
+    --outline-color2: #CEEAFF;
+    --list-style-type: "";
+    --list-style-image: url("/flower.png");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@-moz-document url-prefix() {
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: var(--accent-color) #00000000;
+    }
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background: #00000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    -webkit-border-radius: .3rem;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}
+
+::selection {
+    background: var(--select-color);
+    color: var(--border-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: var(--site-bg);
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+p {line-height: 1.5em;}
+
+div.tags {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: .5rem 0;
+}
+
+div.tags > p.tags {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+div.tags > a {
+    margin-top: .5rem;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: var(--post-header-color);
+    filter: drop-shadow(2px 0 0 var(--outline-color)) drop-shadow(0 2px 0 var(--outline-color)) drop-shadow(-2px 0 0 var(--outline-color)) drop-shadow(0 -2px 0 var(--outline-color))drop-shadow(0 1px 1px var(--outline-color2)) drop-shadow(1px 0 1px var(--outline-color2));
+}
+
+h4,
+h5,
+h6 {color: var(--special-text-color);}
+
+header {
+    background-size: 100%;
+    background-position: center;
+    min-height: 80px;
+    margin: 0 0;
+    align-content: center;
+}
+
+header > h1 {
+    background-color: var(--bg-color2);
+    color: var(--special-text-color);
+    margin: 0 auto;
+    font-size: 2em;
+ 
+     
+    max-width: 48rem;
+    padding: 6px 12px;
+    border-radius: 1em;
+    border: 4px double var(--outline-color);
+    filter: none;
+    text-align: center;
+}
+
+ul.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+
+ul.tags {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+ul.tags li {
+    display: inline-block;
+    margin: 0 .2rem;
+}
+
+li.page-item {
+    list-style: none;
+}
+
+li.page-item a{
+    display: inline-flex;
+    font-size: 1rem;
+    margin: .2rem;
+    background-color: var(--bg-color2);
+    color: var(--text-color);
+    padding: 1em;
+    border: 2px solid var(--border-color);
+    border-radius: .3em;
+    margin-bottom: 1em;
+    box-shadow: var(--post-shadow-color) 5px 5px;
+
+    text-decoration: none;
+    user-select: none;
+}
+
+li.page-item.active a{
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+li.page-item.disabled a{
+    cursor: not-allowed;
+}
+
+li.page-item:not(.disabled):not(.active) a:hover{
+    background-color: var(--select-color);
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+li {
+    
+        list-style-image: var(--list-style-image);
+    
+}
+
+nav {margin: 1em;}
+
+nav.links > ul {
+    max-width: 960px;
+    margin: auto;
+    line-height: 3rem;
+    list-style-type: none;
+    padding-left: 0;
+    justify-content: space-evenly;
+}
+
+nav.links li {
+    text-align: center;
+    list-style-image: none;
+    list-style-type: none;
+}
+
+nav.links li > a {
+    font-weight: bold;
+    background-color: var(--bg-color);
+    border: 4px double var(--outline-color);
+    padding: .5em 3em;
+    text-decoration: none;
+}
+
+nav.links li > a:visited {color: var(--link-color);}
+nav.links li > a:hover {
+    color: var(--accent-color);
+    background-color: var(--select-color);
+}
+
+nav.languages {
+    margin: .3em;
+    text-align: center;
+}
+
+
+nav.languages ul {
+    display: inline-block;
+}
+
+nav.languages ul li {
+    display: inline-block;
+}
+
+a {
+    color: var(--link-color);
+    border-radius: .3em;
+    transition: .2s ease-out;
+}
+
+a:visited {
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    transition: .2s ease;
+}
+
+#sidebar {
+    background-color: var(--bg-color2);
+    color: var(--special-text-color);
+    height: fit-content;
+    min-width: 320px;
+    margin-top: 1em;
+    margin-right: 2em;
+    border-radius: .5em;
+}
+
+.small-box {
+    max-width: 240px;
+    margin: auto;
+    border: 2px solid var(--bg-color);
+    font-size: 11px;
+    line-height: 1.5rem;
+}
+
+#avatar {
+    margin: .5em;
+    max-width: 320px;
+}
+
+ 
+.flower {
+    width: 300px; 
+    aspect-ratio: 1;
+    
+    
+        border-radius: 50%;
+    
+    
+}
+
+#bio {
+    margin: 20px;
+    padding: .2em;
+    background: var(--bg-color);
+    border: 4px double var(--bg-color2);
+    border-radius: 2em;
+    font-size: small;
+}
+
+#bio p { margin: 1em; }
+
+#content {
+    display: flex;
+    max-width: 960px;
+    margin: auto;
+}
+
+main {
+    padding: 1em;
+    padding-top: 0;
+}
+
+#top {
+    background-color: var(--bg-color);
+}
+
+#top section {
+    background-color: var(--bg-color2);
+    border-radius: .5em;
+    margin-bottom: 10px;
+    padding: .5em 1em;
+    width: 100%;
+}
+
+article {
+    background-color: var(--bg-color2);
+    padding: 1em;
+    border: 2px solid var(--border-color);
+    border-radius: .3em;
+    margin-bottom: 1em;
+    box-shadow: var(--post-shadow-color) 5px 5px;
+}
+article img {
+    max-width: 100%;
+}
+
+.readmore summary {
+    font-weight: bold;
+    color: var(--special-text-color);
+    list-style: none;
+    cursor: pointer;
+}
+
+header h1 a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--special-text-color);
+}
+
+header h1 a:visited {
+    color: inherit;
+}
+
+header h1 a:hover {
+    color: inherit;
+}
+
+.readmore div {
+    display: inline;
+}
+
+.readmore div p {
+    display: inline;
+}
+
+.readmore summary::-webkit-details-marker {
+  display: none;
+}
+
+.readmore[open] > summary {
+    border-bottom: 2px dashed var(--bg-color);
+    padding-bottom: .6em;
+    margin-bottom: .6em;
+}
+
+.post-header {
+    color: var(--special-text-color);
+    font-weight: bold;
+    padding: .5rem 0;
+    border-bottom: 4px double var(--outline-color);
+}
+
+.timestamp {
+    font-weight: normal;
+    font-size: smaller;
+    margin: .2em;
+    float: right;
+}
+
+.tag-item p {
+    font-size: smaller;
+}
+
+.photosetx2,
+.photosetx3 {
+    display: grid;
+    gap: 4px;
+    align-items: center;
+}
+
+.photosetx2 {grid-template-columns: 1fr 1fr;}
+.photosetx3 {grid-template-columns: 1fr 1fr 1fr;}
+
+.cropped {
+    width: 156px;
+    height: 156px;
+    overflow: hidden;
+    object-position: 25% 25%;
+}
+.photosetx2 img,
+.photosetx3 img {object-fit: cover;}
+
+.center { text-align: center; }
+
+.img-right {
+    max-width: 7.5em;
+    max-height: 7.5em;
+    float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.small-text {
+    font-size: 11px;
+    text-shadow: var(--bg-color) 1px 1px;
+}
+
+.dropbox-btn {
+    color: var(--link-color);
+    font-weight: bold;
+    background-color: var(--bg-color);
+     
+    border: 1px solid var(--outline-color);
+     
+    text-decoration: none;
+}
+
+.dropbox-content[visible] {
+    display: block;
+}
+
+.dropbox-content {
+    display: none;
+    position: absolute;
+    z-index: 1
+}
+
+.table-of-contents {
+    background-color: var(--bg-color2);
+    padding: .3em;
+    border: 2px solid var(--border-color);
+    border-radius: .3em;
+    box-shadow: var(--post-shadow-color) 5px 5px;
+}
+
+.table-of-contents.sidebar {
+    position: sticky;
+    top: 1rem;
+    height: fit-content;
+    width: 10rem;
+    flex-shrink: 0;
+    max-height: calc(100vh - 2rem);
+    overflow-x: auto;
+}
+
+.table-of-contents.float {
+    width: max-content;
+    max-width: 50vw;
+    max-height: 50%;
+    overflow: auto;
+}
+
+.table-of-contents nav {
+    margin: 0 .5em;
+}
+
+.table-of-contents nav ul {
+    margin: .5em 1em;
+    padding: 0;
+}
+
+.table-of-contents nav li {
+    margin: .3em 0;
+}
+
+#single-post {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#single-post > article {
+    max-width: 48rem
+}
+
+#single-post > article > #post-toc-mobile {
+    display: none;
+}
+
+ 
+@media only screen and (max-width: 800px) {
+    #content {
+        flex-wrap: wrap;
+    }
+    #sidebar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 0;
+        margin-right: 0;
+        margin-bottom: 1em;
+        border-radius: .3em;
+    }
+    header {min-height: 110px;}
+    header > h1 { 
+        width: fit-content;
+        padding: .3em 1em;
+    }
+    nav.links > ul {
+     
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    #bio {width: 50%;}
+    
+    #sidebar ul {
+        line-height: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    #sidebar > .small-box li {
+        margin: .3em 1em;
+    }
+
+    #single-post > .table-of-contents.sidebar {
+        display: none;
+    }
+
+    #single-post > article > #post-toc-mobile {
+        display: inline;
+    }
+}
+
+pre {
+    border:1px solid var(--outline-color);
+    border-radius:6px;
+    padding:0.75rem 1rem;
+    margin:1.2rem 0;
+    overflow-x:auto;  
+}
+</style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+</head>
+<body>
+        <header><h1 id="lean&#39;s blog!!"><a href="http://localhost:1313/">lean&#39;s blog!!</a></h1></header>
+<main>
+    
+    
+    <div id="content">
+    <aside id="sidebar">
+        <div id="avatar">
+            
+            <img class="flower" src="/icon.png">
+            
+        </div>
+        
+        <div id="bio">
+        
+            <p>&ldquo;tell me where&rsquo;s your hiding place, i&rsquo;m worried i&rsquo;ll forget your face&rdquo;</p>
+
+        
+        </div>
+        
+        <div class="small-box">
+            
+                <ul>
+<li>age: 14</li>
+<li>pronouns: he/him</li>
+<li>favorite series: harry potter</li>
+<li>favorite album: humbug</li>
+</ul>
+
+            
+            </ul>
+        </div>
+
+        
+        <div>
+            <div class="tags">
+                <p class="tags">Tags</p>
+            </div>
+
+            <ul class="tags">
+            
+            
+            
+            <li><a href="http://localhost:1313/tags/c/">c</a></li><li><a href="http://localhost:1313/tags/linux/">linux</a></li><li><a href="http://localhost:1313/tags/meow/">meow</a></li>
+            </ul>
+            
+            <div class="tags">
+                <a href="/tags"><b>more tags...</b></a>
+            </div>
+        </div>
+        
+        
+        
+        <nav class="links">
+            <ul>
+            
+            
+                <li><a href="https://www.x.com/leangphok">twitter</a></li>
+            
+                <li><a href="https://www.github.com/leanghok120">github</a></li>
+            
+            
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <article id="top" class="clearfix">
+            
+            <section>
+            <div class="img-right">
+                <img src="/cat.png">
+            </div>
+            <div>
+            <h1>welcome to my blog~!</h1>
+            
+                <p>i&#39;m leanghok and this is my cozy little place on the internet!</p>
+            
+            </div>
+            </section>
+            <section>
+            <h4>things i love:</h4>
+                <ul>
+                
+                    <li>programming</li>
+                
+                    <li>mathematics</li>
+                
+                    <li>linux</li>
+                
+                    <li>cats</li>
+                
+                    <li>lemon tea</li>
+                
+                    <li>arctic monkeys</li>
+                
+                </ul>
+            </section>
+            
+        </article>
+    
+    
+    
+        <article id="post-0">
+            <button id="post-toc-btn-0" class="dropbox-btn" onclick="toggleDropbox('post-toc-0')" >☰</button>
+            <div id="post-toc-0" class="dropbox-content table-of-contents float">
+                
+
+  <nav class="toc">
+  <ul>
+
+      <li>
+        <a href="/posts/write-your-own-bar/#assumptions" class="toc-item toc-level-1">
+          
+          
+          
+          1.
+           assumptions
+        </a>
+      </li>
+
+      <li>
+        <a href="/posts/write-your-own-bar/#creating-a-simple-window" class="toc-item toc-level-1">
+          
+          
+          
+          2.
+           creating a simple window
+        </a>
+      </li>
+
+      <li>
+        <a href="/posts/write-your-own-bar/#setting-ewmh-atoms" class="toc-item toc-level-1">
+          
+          
+          
+          3.
+           setting ewmh atoms
+        </a>
+      </li>
+
+      <li>
+        <a href="/posts/write-your-own-bar/#adding-texts" class="toc-item toc-level-1">
+          
+          
+          
+          4.
+           adding texts
+        </a>
+      </li>
+
+      <li>
+        <a href="/posts/write-your-own-bar/#making-the-bar-a-bit-more-beautiful" class="toc-item toc-level-1">
+          
+          
+          
+          5.
+           making the bar a bit more beautiful
+        </a>
+      </li>
+
+      <li>
+        <a href="/posts/write-your-own-bar/#lastly" class="toc-item toc-level-1">
+          
+          
+          
+          6.
+           lastly
+        </a>
+      </li>
+  </ul>
+  </nav>
+
+            </div>
+            
+            <h2><a href="/posts/write-your-own-bar/">tutorial: write your own bar</a></h2>
+            
+            tags:
+            
+            <a href="/tags/programming">programming</a>,
+            
+            <a href="/tags/linux">linux</a>,
+            
+            <a href="/tags/c">c</a>
+            
+            <div class="post-header">
+                @leanghok <span class="timestamp">06/09/2025</span>
+            </div>
+            <p><p>in this blog post, we&rsquo;re going to be writing a simple X11 bar in C with xlib. by the end of this blog post you will understand the basics of xlib, ewmh, and have a cool minimal bar to play with.</p>
+<p><img src="/myownbar.png" alt="myownbar.png"></p>
+<p>note: right now the bar only displays the current date and time.</p>
+<p>full code: <a href="https://github.com/leanghok120/simplebar">https://github.com/leanghok120/simplebar</a></p>
+<h2 id="assumptions">assumptions</h2>
+<p>this blog post assumes you know the basics of C and the X windowing system.</p></p>
+            
+            <div class="post-content readmore">
+                
+                
+                <div class="text-content"><h2 id="creating-a-simple-window">creating a simple window</h2>
+<p>we&rsquo;ll start by creating our bar window:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include …</span></span></span></code></pre></div></div>
+                <div class="full-content" style="display: none;"><h2 id="creating-a-simple-window">creating a simple window</h2>
+<p>we&rsquo;ll start by creating our bar window:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;X11/Xlib.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;X11/Xatom.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;unistd.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// init
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  Display <span style="color:#f92672">*</span>dpy <span style="color:#f92672">=</span> <span style="color:#a6e22e">XOpenDisplay</span>(NULL);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (dpy <span style="color:#f92672">==</span> NULL) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fprintf</span>(stderr, <span style="color:#e6db74">&#34;cant open display lol bozo&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> scr <span style="color:#f92672">=</span> <span style="color:#a6e22e">DefaultScreen</span>(dpy);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> width <span style="color:#f92672">=</span> <span style="color:#a6e22e">DisplayWidth</span>(dpy, scr);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> height <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// create the bar window
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  Window bar <span style="color:#f92672">=</span> <span style="color:#a6e22e">XCreateSimpleWindow</span>(dpy, <span style="color:#a6e22e">RootWindow</span>(dpy, scr), <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>                                   width, height, <span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>                                   <span style="color:#a6e22e">BlackPixel</span>(dpy, scr), <span style="color:#a6e22e">WhitePixel</span>(dpy, scr));
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">XStoreName</span>(dpy, bar, <span style="color:#e6db74">&#34;cool bar&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// show the bar window
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">XMapWindow</span>(dpy, bar);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">XFlush</span>(dpy);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">sleep</span>(<span style="color:#ae81ff">5</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// clean up
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">XDestroyWindow</span>(dpy, bar);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">XCloseDisplay</span>(dpy);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>the program above should create a window with a width of your screen and a height of 20 but upon running the program you should see that the bar window is positioned like a normal window.</p>
+<p>if you&rsquo;re using a tiling windows manager, you should see the bar window tiled like this:</p>
+<p><img src="/tempbar2.png" alt="tempbar2.png"></p>
+<p>this happens because we haven&rsquo;t told the windows manager that our window is supposed to be a bar so our windows manager just treats it like a normal window.</p>
+<h2 id="setting-ewmh-atoms">setting ewmh atoms</h2>
+<p>in X11, EWMH is a standard that windows managers and other x11 apps use to communicate with each other. for example: by setting a value for these EWMH atoms, the windows manager will be able to know if your program is a normal window or a bar.</p>
+<p>we can tell the windows manager that our window is a bar by setting a specific EWMH atom called <code>_NET_WM_WINDOW_TYPE</code> to <code>_NET_WM_WINDOW_TYPE_DOCK</code> like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>  <span style="color:#75715e">// create the bar window
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// set bar windows type to dock
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  Atom wm_window_type <span style="color:#f92672">=</span> <span style="color:#a6e22e">XInternAtom</span>(dpy, <span style="color:#e6db74">&#34;_NET_WM_WINDOW_TYPE&#34;</span>, False);
+</span></span><span style="display:flex;"><span>  Atom wm_window_type_dock <span style="color:#f92672">=</span> <span style="color:#a6e22e">XInternAtom</span>(dpy, <span style="color:#e6db74">&#34;_NET_WM_WINDOW_TYPE_DOCK&#34;</span>, False);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">XChangeProperty</span>(dpy, bar, wm_window_type, XA_ATOM, <span style="color:#ae81ff">32</span>, PropModeReplace, (<span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">char</span> <span style="color:#f92672">*</span>)<span style="color:#f92672">&amp;</span>wm_window_type_dock, <span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// show the bar window
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// ...
+</span></span></span></code></pre></div><p>by doing this, your bar window becomes a dock and the windows manager will be able to position it like a dock (in most tiling windows manager, they just skip positioning dock windows)</p>
+<p>when you compile and run the program, there should be a white window at the top of your screen.</p>
+<h2 id="adding-texts">adding texts</h2>
+<p>now that we have a blank bar, it&rsquo;s time to add in the information. we&rsquo;ll be adding in the current date and time.</p>
+<p>believe it or not, this part is probably the most complex part of the tutorial because of how drawing texts works in xlib.</p>
+<p>we&rsquo;ll start by loading the font in:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>  <span style="color:#75715e">// set bar windows type to dock
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// add text
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  Font font <span style="color:#f92672">=</span> <span style="color:#a6e22e">XLoadFont</span>(dpy, <span style="color:#e6db74">&#34;fixed&#34;</span>);
+</span></span><span style="display:flex;"><span>  GC gc <span style="color:#f92672">=</span> <span style="color:#a6e22e">XCreateGC</span>(dpy, bar, <span style="color:#ae81ff">0</span>, NULL);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">XSetFont</span>(dpy, gc, font);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">XSetForeground</span>(dpy, gc, <span style="color:#a6e22e">BlackPixel</span>(dpy, scr));
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// clean up
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">XUnloadFont</span>(dpy, font);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">XFreeGC</span>(dpy, gc);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">XDestroyWindow</span>(dpy, bar);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">XCloseDisplay</span>(dpy);
+</span></span></code></pre></div><p>now we will add &ldquo;hello world&rdquo; to our bar window by replacing:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>  <span style="color:#a6e22e">sleep</span>(<span style="color:#ae81ff">5</span>);
+</span></span></code></pre></div><p>with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>  <span style="color:#75715e">// show the bar window
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// ...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// add text to the window
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">while</span> (<span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">XDrawString</span>(dpy, bar, gc, <span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">10</span>, <span style="color:#e6db74">&#34;hello world&#34;</span>, <span style="color:#ae81ff">11</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">XFlush</span>(dpy);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sleep</span>(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// ..
+</span></span></span></code></pre></div><p>running the program, we should see a white window with a black text of &ldquo;hello world&rdquo;.</p>
+<p>let&rsquo;s replace &ldquo;hello world&rdquo; with the current date and time:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>  <span style="color:#75715e">// add text to the window
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">char</span> buf[<span style="color:#ae81ff">64</span>];
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">while</span> (<span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">time_t</span> now <span style="color:#f92672">=</span> <span style="color:#a6e22e">time</span>(NULL);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">strftime</span>(buf, <span style="color:#66d9ef">sizeof</span>(buf), <span style="color:#e6db74">&#34;%a %d %b %Y %I:%M:%S %p&#34;</span>, <span style="color:#a6e22e">localtime</span>(<span style="color:#f92672">&amp;</span>now));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">XClearWindow</span>(dpy, bar); <span style="color:#75715e">// avoid overlapping text
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">XDrawString</span>(dpy, bar, gc, <span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">10</span>, buf, <span style="color:#a6e22e">strlen</span>(buf));
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">XFlush</span>(dpy);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">sleep</span>(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><p>now when we run the program, we should see our bar with the current date and time.</p>
+<h2 id="making-the-bar-a-bit-more-beautiful">making the bar a bit more beautiful</h2>
+<p>we can all agree that currently our bar looks like shit. we can try to fix this by centering the date and time.</p>
+<p>in order to do this, we need to get the width of the date and time text and subtract it from our width and divide it by 2:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>    <span style="color:#75715e">// (in our loop)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> text_width <span style="color:#f92672">=</span> <span style="color:#a6e22e">XTextWidth</span>(<span style="color:#a6e22e">XQueryFont</span>(dpy, font), buf, <span style="color:#a6e22e">strlen</span>(buf));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> text_x <span style="color:#f92672">=</span> (width <span style="color:#f92672">-</span> text_width) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> text_y <span style="color:#f92672">=</span> height <span style="color:#f92672">-</span> <span style="color:#ae81ff">6</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">XClearWindow</span>(dpy, bar); <span style="color:#75715e">// avoid overlapping text
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">XDrawString</span>(dpy, bar, gc, text_x, text_y, buf, <span style="color:#a6e22e">strlen</span>(buf));
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">XFlush</span>(dpy);
+</span></span></code></pre></div><p>running the program, we should see our beautiful bar:</p>
+<p><img src="/finalbar.png" alt="finalbar.png"></p>
+<p>we now have a simple and minimal bar.</p>
+<h2 id="lastly">lastly</h2>
+<p>you might notice that the code in the repo contains a bit more lines than the code in this blog post, this is because the code in the repo also handles SIGINT and SIGTERM.</p>
+<p>you might also notice that our bar has a slight delay where the current date and time shows up a second after the window is mapped. this is because we are just blindly drawing our text after every second. if we want the text to show up as soon as the window is mapped, we would need to also draw the text when our window receives an Expose event.</p>
+<p>and that&rsquo;s pretty much it, we just built a minimal X11 bar in C. from here on out, you can expand it to show system stats, workspaces or make it look even better.</p>
+<p><img src="/barblack.png" alt="barblack.png"></p></div>
+                <summary class="read-more-btn" onclick="toggleReadMore('post-0')" style="display: inline;">read more</summary>
+                
+            </div>
+            
+        </article>
+    
+        <article id="post-1">
+            <button id="post-toc-btn-1" class="dropbox-btn" onclick="toggleDropbox('post-toc-1')" >☰</button>
+            <div id="post-toc-1" class="dropbox-content table-of-contents float">
+                
+
+  <nav class="toc">
+  <ul>
+
+      <li>
+        <a href="/posts/mysterious-meow/#meow" class="toc-item toc-level-1">
+          
+          
+          
+          1.
+           meow
+        </a>
+      </li>
+
+      <li>
+        <a href="/posts/mysterious-meow/#rawr" class="toc-item toc-level-2">
+          
+          
+          
+          1.1.
+           rawr
+        </a>
+      </li>
+  </ul>
+  </nav>
+
+            </div>
+            
+            <h2><a href="/posts/mysterious-meow/">mysterious meow</a></h2>
+            
+            tags:
+            
+            <a href="/tags/meow">meow</a>
+            
+            <div class="post-header">
+                @mochi <span class="timestamp">01/02/2025</span>
+            </div>
+            <p><h2 id="meow">meow</h2>
+<p>meow&hellip; meow rawr, meow meow meow!</p></p>
+            
+            <div class="photosetx2">
+                
+                <a href="/photo6.png" target="_blank"><img src="/photo6.png"></a>
+                
+            </div>
+            
+            <div class="post-content readmore">
+                
+                
+                <div class="text-content"><h3 id="rawr">rawr</h3>
+<p>rawr meow, meow meow rawr, rawr meow meow. meow rawr meow meow, rawr rawr …</p></div>
+                <div class="full-content" style="display: none;"><h3 id="rawr">rawr</h3>
+<p>rawr meow, meow meow rawr, rawr meow meow. meow rawr meow meow, rawr rawr rawr meow rawr, rawr meow meow.
+meow rawr, meow rawr meow!</p></div>
+                <summary class="read-more-btn" onclick="toggleReadMore('post-1')" style="display: inline;">read more</summary>
+                
+            </div>
+            
+        </article>
+    
+        <article id="post-2">
+            <h2><a href="/posts/friends/">friends!!</a></h2>
+            
+            tags:
+            
+            <a href="/tags/meow">meow</a>,
+            
+            <a href="/tags/rawr">rawr</a>
+            
+            <div class="post-header">
+                @mochi <span class="timestamp">29/01/2025</span>
+            </div>
+            <p><p>meow rawr meow meow, rawr!</p></p>
+            
+            <div class="photosetx2">
+                
+                <a href="/photo1.png" target="_blank"><img src="/photo1.png"></a>
+                
+                <a href="/photo2.png" target="_blank"><img src="/photo2.png"></a>
+                
+            </div>
+            
+            <div class="post-content readmore">
+                
+                
+                <div class="text-content"><p>rawr meow, meow rawr rawr meow meow, rawr meow meow rawr!
+rawr meow meow rawr, …</p></div>
+                <div class="full-content" style="display: none;"><p>rawr meow, meow rawr rawr meow meow, rawr meow meow rawr!
+rawr meow meow rawr, rawr meow meow meow rawr!</p></div>
+                <summary class="read-more-btn" onclick="toggleReadMore('post-2')" style="display: inline;">read more</summary>
+                
+            </div>
+            
+            <div class="photosetx3">
+                
+                <a href="/photo3.png" target="_blank"><img src="/photo3.png"></a>
+                
+                <a href="/photo4.png" target="_blank"><img src="/photo4.png"></a>
+                
+                <a href="/photo5.png" target="_blank"><img src="/photo5.png"></a>
+                
+            </div>
+            
+        </article>
+    
+    
+    <script>
+    window.addEventListener('click', e => {
+        let dropboxs = document.getElementsByClassName("dropbox-content");
+        let dropbox_btns = document.getElementsByClassName("dropbox-btn");
+
+        if (dropbox_btns.namedItem(e.target.id) != null) return;
+
+        if(dropboxs.namedItem(e.target.id) == null) {
+            for (let i = 0; i < dropboxs.length; i++) {
+                dropboxs[i].removeAttribute("visible");
+            }
+        }
+    }, true)
+
+    function toggleReadMore(id) {
+        var post = document.getElementById(id)
+        var fullContent = post.getElementsByClassName("full-content")[0];
+        var btnText = post.getElementsByClassName("read-more-btn")[0];
+        var textContent = post.getElementsByClassName("text-content")[0];
+
+        if (fullContent.style.display === "none") {
+            textContent.style.display = "none";
+            fullContent.style.display = "inline";
+            btnText.innerHTML = "read less";
+        } else {
+            textContent.style.display = "inline";
+            fullContent.style.display = "none";
+            btnText.innerHTML = "read more";
+        }
+    }
+
+    function toggleDropbox(id) {
+        let dropbox = document.getElementById(id);
+
+        dropbox.toggleAttribute("visible");
+    }
+    </script>
+    </main>
+
+    
+</main>
+</body>
+</html>

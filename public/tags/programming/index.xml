@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on lean&#39;s blog!!</title>
+    <link>http://localhost:1313/tags/programming/</link>
+    <description>Recent content in programming on lean&#39;s blog!!</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Sep 2025 21:05:11 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tutorial: write your own bar</title>
+      <link>http://localhost:1313/posts/write-your-own-bar/</link>
+      <pubDate>Sat, 06 Sep 2025 21:05:11 -0300</pubDate>
+      <guid>http://localhost:1313/posts/write-your-own-bar/</guid>
+      <description>&lt;p&gt;in this blog post, we&amp;rsquo;re going to be writing a simple X11 bar in C with xlib. by the end of this blog post you will understand the basics of xlib, ewmh, and have a cool minimal bar to play with.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/myownbar.png&#34; alt=&#34;myownbar.png&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;note: right now the bar only displays the current date and time.&lt;/p&gt;&#xA;&lt;p&gt;full code: &lt;a href=&#34;https://github.com/leanghok120/simplebar&#34;&gt;https://github.com/leanghok120/simplebar&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;assumptions&#34;&gt;assumptions&lt;/h2&gt;&#xA;&lt;p&gt;this blog post assumes you know the basics of C and the X windowing system.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
