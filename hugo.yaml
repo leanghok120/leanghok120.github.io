@@ -33,3 +33,7 @@ params:
   favicon: "/favicon.ico"
   posts-per-page: 3 # defaults to 5 if not defined
   toc-auto-numbering: false
+
+caches:
+  images:
+    dir: :cacheDir/images
